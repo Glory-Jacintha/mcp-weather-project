@@ -74,7 +74,7 @@ Forecast: {period['detailedForecast']}
     return "\n---\n".join(forecasts)
 
 def main():
-    mcp.run(transport='stdio')
+    mcp.run(transport='streamable-http')
     
 if __name__ == "__main__":
     main()
